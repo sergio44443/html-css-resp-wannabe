@@ -129,19 +129,11 @@ img {
  ************************************************/
 
 
-@media screen and (max-width: 480px ) {
-    body{
-        display: flex;
-        flex-wrap: wrap
-    }
-}
 
-/* desktop */
 
-@media (min-width: 1200px) {
-
+ @media (min-width: 768px) and (max-width: 1199px) {
     .container {
-      max-width: 1200px;
+      max-width: 768px;
       margin: 0 auto;
     }
     .row {
@@ -150,21 +142,25 @@ img {
       justify-content: center;
     }
     .col {
-      flex-basis: 33.33%;
+      flex-basis: 50%;
     }
   }
 
-  @media (max-width: 767px) {
-
+@media (max-width: 480px) {
     .container {
-        max-width: 100%;
-        margin: 0 auto;
-        align-items: center;
-      }
-      .row {
-        display: block;
-      }
-      .col {
-        width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      align-items: center;
+      
+    }
+    .row {
+      display: block;
+      align-content: center;
+
+    }
+    .col {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
